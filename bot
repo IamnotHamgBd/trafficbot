@@ -1,21 +1,8 @@
-!/usr/bin/env python
+from selenium import webdriver
+driver = webdriver.Firefox()
+url = ('https://supertechnicalidea.blogspot.com')
 
-import webbrowser
-import time
 x = 1
-while True:
-  webbrowser.open('http://url/')
-  time.sleep(15)
-	webbrowser.open_new_tab('https://newspaperktm.blogspot.com/')
-	time.sleep(10)
-	webbrowser.open_new_tab('https://newspaperktm.blogspot.com/')
-	time.sleep(10)	
-	webbrowser.open_new_tab('https://newspaperktm.blogspot.com/')
-	time.sleep(10)
-	webbrowser.open_new_tab('https://newspaperktm.blogspot.com/')
-	time.sleep(10)	
-	webbrowser.open_new_tab('https://newspaperktm.blogspot.com/')
-	time.sleep(10)
-	x +=1
-	
-	
+
+for x in range(int('100000')):
+    driver.get(url)
